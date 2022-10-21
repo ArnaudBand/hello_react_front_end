@@ -3,7 +3,6 @@ import { useSelector, shallowEqual } from 'react-redux';
 
 const Greeting = () => {
   const name = useSelector((state) => state.reducerGreetings.greetings, shallowEqual);
-  console.log(name);
   return (
     <div className="container">
       <div>
