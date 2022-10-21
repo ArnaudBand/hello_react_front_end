@@ -1,10 +1,14 @@
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Greeting from './components/Greeting';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Greeting />} />
+      </Routes>
+    </Router>
   );
 }
 
